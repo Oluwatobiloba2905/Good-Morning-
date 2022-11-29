@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* background color black */
+        document.body.style.backgroundColor = 'black';
+        /* add image (https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/307020121_393915949588623_6007147514708536974_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFCzHHeecDHvNYcHY99_a0OwO6HZ3xWyZzA7odnfFbJnI_ViS-j_kIOWAL1_H2XpC38S2yu9OYL-7M-g9FGyfKK&_nc_ohc=Wmql8rsh2QUAX9ouMXz&tn=roX-bWBNt10XtZAh&_nc_ht=scontent-los2-1.xx&oh=00_AfAb_EVLftUZ--yz6e0w9RZjihoqkr1RoqFl-rOL8OeFjw&oe=638BA8DA) */
+        var img = document.createElement('img');
+        img.src =
+            'https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/307020121_393915949588623_6007147514708536974_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFCzHHeecDHvNYcHY99_a0OwO6HZ3xWyZzA7odnfFbJnI_ViS-j_kIOWAL1_H2XpC38S2yu9OYL-7M-g9FGyfKK&_nc_ohc=Wmql8rsh2QUAX9ouMXz&tn=roX-bWBNt10XtZAh&_nc_ht=scontent-los2-1.xx&oh=00_AfAb_EVLftUZ--yz6e0w9RZjihoqkr1RoqFl-rOL8OeFjw&oe=638BA8DA';
+        document.body.appendChild(img);
+        /* reduce height to 90px */
+        img.style.height = '90px';
+        /* increase height to 150px */
+        img.style.height = '190px';
+        /* increase width by 20px */
+        img.style.width = '20px';
+        /* increase width by 90px */
+        img.style.width = '90px';
+        /* increase width by 140px */
+        img.style.width = '140px';
+        /* increase height by 20px */
+        img.style.height = '20px';
+        /* increase height  to 190px */
+        img.style.height = '190px';
+        /* add border radius 20px */
+        img.style.borderRadius = '20px';
+        /* duplicate image */
+        var img2 = document.createElement('img');
+        img2.src =
+            'https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/307020121_393915949588623_6007147514708536974_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFCzHHeecDHvNYcHY99_a0OwO6HZ3xWyZzA7odnfFbJnI_ViS-j_kIOWAL1_H2XpC38S2yu9OYL-7M-g9FGyfKK&_nc_ohc=Wmql8rsh2QUAX9ouMXz&tn=roX-bWBNt10XtZAh&_nc_ht=scontent-los2-1.xx&oh=00_AfAb_EVLftUZ--yz6e0w9RZjihoqkr1RoqFl-rOL8OeFjw&oe=638BA8DA';
+        document.body.appendChild(img2);
+        /* change img2 to (https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/307834360_393915959588622_7369559544774716233_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE0Am3KPEzS4ESCdJF-mA5LvemEaAE9rka96YRoAT2uRkaQdCIsXQZYRfTb4T4aAGhPGDovelzvm-8xpDW4dFIS&_nc_ohc=H06bxmSUBCMAX9OUacF&_nc_ht=scontent-los2-1.xx&oh=00_AfD8VFGZ0XOYqgtsQY2vQb_lgRaP-zqII6qX7ePa1_F4Cg&oe=638A43BB) */
+        img2.src =
+            'https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/307834360_393915959588622_7369559544774716233_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE0Am3KPEzS4ESCdJF-mA5LvemEaAE9rka96YRoAT2uRkaQdCIsXQZYRfTb4T4aAGhPGDovelzvm-8xpDW4dFIS&_nc_ohc=H06bxmSUBCMAX9OUacF&_nc_ht=scontent-los2-1.xx&oh=00_AfD8VFGZ0XOYqgtsQY2vQb_lgRaP-zqII6qX7ePa1_F4Cg&oe=638A43BB';
+        /* give img2 the same size as img1 */
+        img2.style.height = '190px';
+        img2.style.width = '140px';
+        /* img2 border radius =20px */
+        img2.style.borderRadius = '20px';
+        /* Move img2 to left */
+        img2.style.marginLeft = '-100px';
+        /* move img2 to right */
+        img2.style.marginLeft = '100px';
+        /* float img2 right */
+        img2.style.float = 'right';
+        /* Zoom in on hover on img1, */
+        img.onmouseover = function () {
+            img.style.transform = 'scale(1.5)';
+        }
+        /* Zoom in on hover on img2. */
+        img2.onmouseover = function () {
+            img2.style.transform = 'scale(1.5)';
+        }
+        /* zoom out after hover. */
+        img.onmouseout = function () {
+            img.style.transform = 'scale(1)';
+        }
+        /* zoom out after hovering img2. */
+        img2.onmouseout = function () {
+            img2.style.transform = 'scale(1)';
+        }
+        /* create good morning animation */
+        var goodMorning = document.createElement('div');
+        goodMorning.innerHTML = 'Good Morning';
+        goodMorning.style.color = 'white';
+        goodMorning.style.fontSize = '50px';
+        goodMorning.style.fontFamily = 'Arial';
+        goodMorning.style.position = 'absolute';
+        goodMorning.style.top = '50%';
+        goodMorning.style.left = '50%';
+        goodMorning.style.transform = 'translate(-50%, -50%)';
+        document.body.appendChild(goodMorning);
+        /* change background to (https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1bnNoaW5lfGVufDB8fDB8fA%3D%3D&w=1000&q=80) */
+        document.body.style.backgroundImage =
+            'url(https://images.unsplash.com/12/sun-trees.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1bnNoaW5lfGVufDB8fDB8fA%3D%3D&w=1000&q=80)';
+        /* reduce zooming timing on img1 and img2 */
+        img.onmouseover = function () {
+            img.style.transform = 'scale(1.5)';
+        }
+        img2.onmouseover = function () {
+            img2.style.transform = 'scale(1.5)';
+        }
+        img.onmouseout = function () {
+            img.style.transform = 'scale(1)';
+        }
+        img2.onmouseout = function () {
+            img2.style.transform = 'scale(1)';
+        }
+        /* background repeat none */
+        /* set background repeat to none */
+        document.body.style.backgroundRepeat = 'none';
+        /* add j animation */
+        var j = document.createElement('div');
+        j.innerHTML = 'J';
+        j.style.color = 'white';
+        j.style.fontSize = '50px';
+        j.style.fontFamily = 'Arial';
+        j.style.position = 'absolute';
+        j.style.top = '50%';
+        j.style.left = '50%';
+        j.style.transform = 'translate(-50%, -50%)';
+        document.body.appendChild(j);
+        /* move j text down */
+        j.style.top = '60%';
+        /* make j text curly */
+        j.style.fontFamily = 'cursive';
+        /* italize j text */
+        j.style.fontStyle = 'italic';
+        /* add heart shape near j text */
+        var heart = document.createElement('div');
+        heart.innerHTML = '&#9829;';
+        heart.style.color = 'white';
+        heart.style.fontSize = '50px';
+        heart.style.fontFamily = 'Arial';
+        heart.style.position = 'absolute';
+        heart.style.top = '50%';
+        heart.style.left = '50%';
+        heart.style.transform = 'translate(-50%, -50%)';
+        document.body.appendChild(heart);
+        /* move heart shape beside j text */
+        heart.style.left = '60%';
+        /* move heart shape down */
+        heart.style.top = '60%';
+        /* change heart shape color to red */
+        heart.style.color = 'red';
+        /* move heart shape left 5px */
+        heart.style.left = '800px';
+        /* remove img1 and img2 */
+        document.body.removeChild(img);
+        document.body.removeChild(img2);
+        /* add background sound (https://www.youtube.com/watch?v=WarL4vURLYw) */
+        var audio = document.createElement('audio');
+        audio.src = 'https://www.youtube.com/watch?v=WarL4vURLYw';
+        document.body.appendChild(audio);
+        /* play audio onload */
+        audio.autoplay = true;
+        document.body.style.width = '100%';
+        document.body.style.height = '100%';
+    </script>
+</body>
+
+</html>
